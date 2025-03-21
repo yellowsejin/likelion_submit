@@ -1,0 +1,42 @@
+.center{
+    width: 1250px;
+    height: 100vh;
+    margin: 0 auto;
+}
+header *{
+    height: 100px;
+}
+header {
+    display:flex;
+}
+header>.left{
+    width: 250px;
+    background-color: #EEEEE9;
+}
+header>.right{
+    width: 1000px;
+    background-color: #d6ccc2;
+}
+main> .sc1{
+    width: 1250px;
+    height: 440px;
+    background-color: #F5ECE1;
+}
+main> .sc2{
+    height: 440px;
+    width: 100%;
+    display: flex;
+}
+.sc2> .left{
+    width: 50%;
+    background-color: #E4D6CA;
+}
+.sc2> .right{
+    width: 50%;
+    background-color: #D5BEB1;
+}
+footer{
+    width: 1250px;
+    height: 100px;
+    background-color: #D6CCC2;
+}
