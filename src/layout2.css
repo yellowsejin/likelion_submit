@@ -1,0 +1,42 @@
+.class{
+    width: 1250px;
+    height: 100vh;
+    margin: 0 ;
+}
+header{
+    display:flex;
+}
+header>.left{
+    width: 250px;
+    height: 100px;
+    background-color: #54D8DC;
+}
+header>.right{
+    width: 1000px;
+    height: 100px;
+    background-color: #86DADC;
+}
+main{
+    display:flex;
+}
+footer{
+    display:flex;
+}
+footer>.side1{
+    width: 250px;
+    height: 100px;
+    background-color: #FDE1E0;
+}
+footer.side2{
+    display:flex;
+}
+.side2>.up{
+    height: 50px;
+    width: 1000px;
+    background-color: #FECECE;
+}
+.side2>.down{
+    height: 50px;
+    width: 1000px;
+    background-color: #FDB2B5;
+}
