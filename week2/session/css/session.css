@@ -1,0 +1,26 @@
+.display{
+    margin: 0 auto;
+    width: 900px;
+    height: 100vh;
+    background-color: #b49d9d;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.display>div{
+    height: 200px;
+}
+
+.box01{
+    width: 100px;
+    background-color: rgb(195, 211, 159);
+}
+.box02{
+    width: 200px;
+    background-color: rgb(182, 220, 193);
+}
+.box03{
+    width: 300px;
+    background-color: rgb(185, 188, 222);
+}

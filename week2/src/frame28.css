@@ -1,0 +1,133 @@
+.class{
+    width: 1250px;
+    height: 100vh;
+    margin: 0 ;
+}
+header{
+    display:flex;
+}
+header>.logo{
+    width: 250px;
+    height: 100px;
+    background-color: #54D8DC;
+}
+header>.nav{
+    width: 1000px;
+    height: 100px;
+    background-color: #86DADC;
+}
+main{
+    display:flex;
+}
+main>.left{
+    background-image: url(../picture/layout2-1.png);
+    background-size: 415px 880px;
+    width: 415px;
+    height: 880px;
+}
+main>.middle{
+    background-image: url(../picture/layout2-2.png);
+    background-size: 416px 880px;
+    width: 416px;
+    height: 880px;
+}
+main>.left{
+    background-image: url(../picture/layout2-3.png);
+    background-size: 416px 880px;
+    width: 416px;
+    height: 880px;
+}
+footer{
+    display:flex;
+}
+footer>.footer_left{
+    width: 250px;
+    height: 100px;
+    background-color: #FDE1E0;
+}
+.footer_right>.right_top{
+    height: 50px;
+    width: 1000px;
+    background-color: #FECECE;
+}
+.footer_right>.right_bottom{
+    height: 50px;
+    width: 1000px;
+    background-color: #FDB2B5;
+}
+
+@media (max-width: 680px) and (min-width: 450px){
+    #wrap {
+        width: 100%;
+    }
+    header{
+        display: block;
+    }
+    header>.logo{
+        width: 100%;
+    }
+    header>.nav{
+        width: 100%;
+    }
+    main{
+        display: block;
+    }
+    main>.left {
+        width: 100%;
+        height: 225px;
+        background-image: url(../picture/layout28_top.png);
+        background-size: cover;
+        background-position: center;
+
+    }
+    main>.middle{
+        width: 100%;
+        height: 230px;
+        background-image: url(../picture/layout24_middle.png);
+        background-size: cover;
+        background-position: center;
+
+    }
+    main>.right{
+        width: 100%;
+        height: 225px;
+        background-image: url(../picture/layout28_bottom.png);
+        background-size: cover;
+        background-position: center;
+    }
+    footer{
+        display: block;
+    }
+    footer>.footer_left{
+        width: 100%;
+        height: 100px;
+    }
+    .footer_right>.right_top{
+        height: 50px;
+    }
+    .footer_right>.right_bottom{
+        height: 50px;
+    }
+}
+@media (max-width: 450px) {
+    main>.left{
+        width: 100%;
+        height: 340px;
+    }
+    main>.middle{
+        width: 100%;
+        height: 340px;
+    }
+    main>.right{
+        display: none;
+    }
+    footer>.footer_left{
+        height: 200px;
+    }
+    .footer_right>.right_top{
+        display: none;
+    }
+    .footer_right>.right_bottom{
+        display: none;
+    }
+}
