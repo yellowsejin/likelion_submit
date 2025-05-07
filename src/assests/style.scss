@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'NanumSquareNeo-Variable';
+    padding: 0;
+    margin: 0;
+    background-color: #92CAFF;
+}
+
+button {
+    cursor: pointer;
+}
+
+.input {
+    margin: 0 auto;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 40px;
+}
+
+.title{
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+}
+
+.write_wrap{
+    text-align: center;
+    position: relative;
+}
+
+.newTodo {
+    width: 100%;
+    padding: 20px 30px;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 16px;
+}
+
+.newTodo::placeholder {
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 15px;
+}
+
+.button_add {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00000000;
+    border: 0;
+}
+
+.add {
+    background-color: transparent;
+    border: none;
+}
+
+.add img {
+    width: 22px;
+    height: 22px;
+}
+
+.todo_wrap{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.todo_main{
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    height: 100%;
+    border-bottom: 2px solid #92CAFF;
+}
+
+.checkbox_img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+
+.checkbox_img::after{
+    content: '✓';
+    display: none;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    text-align: center;
+    color: #fff;
+    background-color: #92CAFF;
+}
+
+.checkbox_img[data-checked='true']::after {
+    display: block;
+}
+
+.todo_main p {
+    font-size: 15px;
+    color: #3F6181;
+    flex-grow: 1;
+}
+
+.del_img {
+    background-color: transparent;
+    bottom: none;
+    padding: 5px;
+}
+
+.del_img img {
+    width: 15px;
+    height: 15px;
+}
