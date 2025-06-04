@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week09</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/section/account.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="homepage.html"><img src="../assets/img/Vector (1).svg" alt=""></a>
+            <p>Profile</p>
+        </header>
+        <div class="profile_img">
+            <img src="../assets/img/Ellipse 741.png" alt="">
+            <div class="info">
+                <h1 class="name">Jonas Macroni</h1>
+                <p class="job">Expert</p>
+            </div>
+        </div>
+
+        <div class="main" id="mainMenu"></div>
+
+        <div class="footer">
+            <div class="menu">
+                <img src="../assets/img/black_home.png" alt="">
+                <p>Home</p>
+            </div>
+            <div class="menu">
+                <img src="../assets/img/Search 1.png" alt="">
+                <p>Product</p>
+            </div>
+            <a href="transaction.html" class="menu">
+                <img src="../assets/img/transaction 1.png" alt="">
+                <p>Transaction</p>
+            </a>
+            <div class="menu clicked">
+                <img src="../assets/img/Profile 1 (1).png" alt="">
+                <p>Account</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuItems = [
+            { text: "Contact Info", icon: "contact.png", link: "contactInfo.html" },
+            { text: "Source of Funding Info", icon: "funding.png" },
+            { text: "Bank Account Info", icon: "bank.png" },
+            { text: "Document Info", icon: "doc.png" },
+            { text: "Settings", icon: "setting.png" }
+        ];
+
+        const mainMenu = document.getElementById("mainMenu");
+
+        menuItems.forEach(item => {
+            const box = document.createElement(item.link ? "a" : "div");
+            if (item.link) box.href = item.link;
+
+            box.className = "box";
+            box.innerHTML = `
+                <img class="icon" src="../assets/img/${item.icon}" alt="">
+                <p>${item.text}</p>
+                <img class="arrow" src="../assets/img/arrow.png" alt="">
+            `;
+
+            mainMenu.appendChild(box);
+        });
+    </script>
+
+
+</body>
+</html>
